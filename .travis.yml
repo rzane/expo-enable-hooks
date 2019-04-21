@@ -1,0 +1,12 @@
+language: node_js
+
+node_js:
+  - 11.10.1
+
+cache:
+  yarn: true
+
+script:
+  - yarn validate
+
+after_success: npx semantic-release
